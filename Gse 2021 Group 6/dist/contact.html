@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact Mike Smith</title>
   </head>
@@ -36,7 +37,7 @@
 
     <main>
       <section class="contact">
-        <h2>Contact Me..</h2>
+        <!-- <h2>Contact Me..</h2>
 
         <div class="contact__list">
           <div class="contact__email">
@@ -66,7 +67,16 @@
           <a href="#!">
             <i class="fab fa-github fa-2x"></i>
           </a>
-        </div>
+
+          <button id="btn">tap me</button>
+        </div> -->
+
+        <h3>Contact Us</h3>
+        <!-- <label for="company_name">company name</label> -->
+        <input type="text" id="company_name" placeholder="company name">
+        <input type="text" id="company_email" placeholder="company email">
+        <textarea name="message" id="company_message" cols="30" rows="10" placeholder="message"></textarea>
+        <button id="btn">send</button>
 
         <footer>&copy; Copyright 2019</footer>
       </section>
@@ -74,5 +84,8 @@
 
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+
+
   </body>
 </html>
