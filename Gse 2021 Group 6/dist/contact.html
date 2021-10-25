@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact Mike Smith</title>
   </head>
@@ -36,43 +37,50 @@
 
     <main>
       <section class="contact">
-        <h2>Contact Me..</h2>
+        <h3>Contact Us</h3>
 
-        <div class="contact__list">
-          <div class="contact__email">
-            <i class="fas fa-envelope"></i> Email
-            <div class="text-secondary">email@email.com</div>
-          </div>
-          <div class="contact__phone">
-            <i class="fas fa-mobile-alt"></i> Phone
-            <div class="text-secondary">+1 (555) 555-5555</div>
-          </div>
-          <div class="contact__address">
-            <i class="fas fa-marker-alt"></i> Address
-            <div class="text-secondary">123 First St. Houston, TX</div>
-          </div>
-        </div>
+          <input type="text" id="company_name" placeholder="COMPANY NAME" > 
+          <input type="text" id="company_email" placeholder="COMPANY EMAIL"> 
+          <textarea name="message" id="company_message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+          <button id="btn">send</button>
+          <button id="btn1">message</button>
 
-        <div class="social-icons">
-          <a href="#!">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-        </div>
 
         <footer>&copy; Copyright 2019</footer>
       </section>
     </main>
 
+
+    <style>
+      #company_name, #company_email, #company_message  {
+        width: 40%;
+        margin-bottom: 10px;
+        text-align: center;
+        outline: none;
+
+      }
+
+      #company_name, #company_email {
+        height: 40px;
+      }
+
+      input[type="text"]:hover, textarea:hover {
+        border: 2px solid green;
+      }
+
+      #btn, #btn1 {
+        width: 60px;
+        height: 30px;
+      }
+
+
+
+    </style>
+
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+
+
   </body>
 </html>
